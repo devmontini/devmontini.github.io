@@ -2092,6 +2092,64 @@ input[type="radio"] + label:before {
   padding: 0;
 }
 
+/* Tecno UL */
+
+ul.tecnos {
+  cursor: default;
+  list-style: none;
+  padding-left: 0;
+}
+
+ul.tecnos li {
+  display: inline-block;
+  padding: 0 1em 0 0;
+}
+
+ul.tecnos li:last-child {
+  padding-right: 0;
+}
+
+ul.tecnos li .tecno:before {
+  font-size: 1.5em;
+}
+
+/* Tecno */
+
+.tecno {
+  text-decoration: none;
+  border-bottom: none;
+  position: relative;
+}
+
+.tecno:before {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  text-transform: none !important;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+}
+
+.tecno > .label {
+  display: none;
+}
+
+.tecno:before {
+  line-height: inherit;
+}
+
+.tecno.solid:before {
+  font-weight: 900;
+}
+
+.tecno.brands:before {
+  font-family: "Font Awesome 5 Brands";
+}
+
 /* Icon */
 
 .icon {
@@ -2127,6 +2185,12 @@ input[type="radio"] + label:before {
 
 .icon.brands:before {
   font-family: "Font Awesome 5 Brands";
+}
+
+/* Web */
+
+.web:hover {
+  color: #3eb08f;
 }
 
 /* Image */
@@ -2167,7 +2231,7 @@ input[type="radio"] + label:before {
   border-radius: 0.35em;
   border: solid 3px rgba(255, 255, 255, 0.5);
   color: #fff;
-  content: "View";
+  content: "Open";
   display: inline-block;
   font-size: 0.8em;
   font-weight: 400;
